@@ -1,0 +1,386 @@
+*{
+    margin: 0;            /*Setting margin to zero so that we can adjust other elements in accordance with 0*/
+    font-family: Arial;
+    box-sizing: border-box;   /*Can be used to measure space, it is just a good practice for major projects*/
+
+}
+
+/*Navigation Bar*/
+
+/*Amazon Logo*/
+.navbar {
+    height: 60px;             /*From inspect in Amazon.com website*/
+    background-color: #0F1111;       /*From inspect in Amazon.com websie*/
+    color: white; /*this selects the text color*/
+    display: flex;          /*VVVVI: This helps you make horizontal the next space your element will add*/
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 113px;
+
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.border{    /*all elements in any wesbsite must have border, may it be transparent or has any color in it*/
+    border: 1px transparent;
+}
+.border:hover{     /*the border will have cover if you hover your mouse on it*/
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+/*Deliver to Ayush element*/
+.nav-address-first-line{
+    font-size: 12px;
+    color:#CCCCCC;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.nav-address-second-line{
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.add-icon{
+    align-items: center;
+    display:flex;
+}
+
+
+/*Search Bar*/
+.nav-search{
+    display : flex;
+    margin-top : 15px;
+    margin-left: 5px;
+    height: 40px;
+    border-radius: 6px;
+    width: 620px;
+    background-color: pink;
+}
+.nav-search:hover{
+    border: 2px solid orange
+
+}
+.search-select{
+    width: 45px;
+    background-color:#f3f3f3;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-logo{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #febd68;
+    color:#0F1111 ;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+
+/**Sign In box**/
+
+.signin-p1{
+    margin-top: 20px;
+    font-size: 0.7rem;
+}
+.signin-p2{
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+.nav-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.nav-p1{
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+
+
+/*
+Navigation Bar
+Completed
+*/
+
+
+
+
+/*Panel Under the navigation bar*/
+
+.panel-bar{
+    height: 40px;
+    background-color: #222F3D;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-options p {
+    display: inline;
+    color: white;
+    margin-left: 15px;
+}
+.panel-bar p:hover {
+    color:rgb(1, 113, 179);
+    cursor: pointer;
+}
+
+.panel-options{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*Hero Section*/
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size:cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+}
+.hero-message{
+    background-color: white;
+    border-radius: 1px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:0.85rem;
+    width: 80%;
+    margin-bottom: 50px;
+}
+.hero-message a{
+    color: rgb(1, 113, 179)
+}
+.hero-message a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*Shop Section*/
+.shop-section{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    height: 460px;
+}
+.box{
+    margin-top: 15px;
+    height: 400px;
+    width:23%;
+    border: 2px solid none;
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+.box:hover{
+    cursor:pointer;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color:rgb(1, 113, 179);
+}
+.box-img{
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    background-size: cover
+}
+.shop-section p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+
+
+/*Sign in Section*/
+.signin-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    background-color: #e2e7e6;
+    height: 100px;
+}
+.signin-sec p{
+    font-size: 0.75rem;
+}
+
+.signin-sec a{
+    color:rgb(1, 113, 179);
+}
+.signin-sec a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signin-button{
+    background-color: #fa920a;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+
+}
+.signin-button:hover{
+    background-color: #f36100 ;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Footer*/
+
+
+.foot-btt{
+    background-color: #37475A;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+.foot-btt:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #37475ad2;
+}
+
+
+.foot-appendix{
+    background-color: #232F3E;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    color:white;
+}
+.panel{
+    margin-top: 50px;
+}
+.panel p{
+    margin-top: 10px;
+    width: 200px;
+    font-size: 0.90rem;
+    color: #DDDDDD;
+}
+.panel p:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+
+.foot-other-services{
+    height: 850px;
+    background-color:#040f1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:0px;
+}
+.mainpanel{
+    height: 110px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fpanel{
+    margin-top: 0px;
+    margin-left: 50px;
+    height: 20px;
+    width: 90px;
+    font-size: 0.75rem;
+}
+.fpanel:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+.fpanel h4{
+    color:#DDDDDD;
+    font-weight: 200;
+}
+
+.fpanel p{
+    color:rgb(87, 87, 87); 
+}
+
+
+
+.foot-copyright{
+    display: flex;
+    justify-content: space-evenly;
+    color: #999999;
+    font-size: 0.90rem;
+    
+}
+.copyright-text{
+    margin-left: 30px;
+    font-weight: 300;
+}
+.foot-cc{
+    margin-top: -30px;
+}
+.cc-text{
+    display: flex;
+    justify-content: space-evenly;
+    color: #999999;
+    font-size: 0.90rem;
+}
